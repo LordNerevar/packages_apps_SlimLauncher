@@ -224,13 +224,13 @@ public class DeviceProfile {
         searchBarSpaceHeightPx = searchBarHeightPx + (showSearchBar ? 2 * edgeMarginPx : 0);
 
         int prefNumRows = SettingsProvider.getCellCountY(
-                context, SettingsProvider.KEY_HOMESCREEN_GRID, 4);
+                context, SettingsProvider.KEY_HOMESCREEN_GRID, 6);
         if (prefNumRows > 0) {
             numRows = prefNumRows;
         }
 
         int prefNumColumns = SettingsProvider.getCellCountX(
-                context, SettingsProvider.KEY_HOMESCREEN_GRID, 4);
+                context, SettingsProvider.KEY_HOMESCREEN_GRID, 5);
         if (prefNumColumns > 0) {
             numColumns = prefNumColumns;
         }
